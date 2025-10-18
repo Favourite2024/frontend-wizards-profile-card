@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile Card</title>
+  <title>Favour Udeh - Profile Card</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <article data-testid="test-profile-card" class="profile-card">
     <div class="card-header">
-      <img
-        src="image.jpg"
-        alt="Profile photo of Favour Udeh"
-        class="avatar"
-        data-testid="test-user-avatar"
-      />
+      <div class="avatar-container">
+        <div class="avatar-ring"></div>
+        <img
+          src="image.jpg"
+          alt="Profile photo of Favour Udeh"
+          class="avatar"
+          data-testid="test-user-avatar"
+        />
+      </div>
     </div>
 
     <div class="card-content">
@@ -72,8 +75,6 @@
     </div>
   </article>
 
-  <script src="script.js">
-    
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
