@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favour Udeh - Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <article data-testid="test-profile-card" class="profile-card">
+    <div class="card-header">
+      <img
+        src="image.jpg"
+        alt="Profile photo of Favour Udeh"
+        class="avatar"
+        data-testid="test-user-avatar"
+      />
+    </div>
+
+    <div class="card-content">
+      <h2 data-testid="test-user-name">Favour Onyinyechi Udeh</h2>
+
+      <p class="bio" data-testid="test-user-bio">
+        Frontend Developer passionate about crafting accessible, responsive, and human-centered digital experiences and learning new technologies.
+      </p>
+
+      <div class="time-container">
+        <span class="time-label">Current Time:</span>
+        <span id="time" data-testid="test-user-time">0</span>
+      </div>
+
+      <div class="lists-container">
+        <section class="list-section">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding</li>
+            <li>Creating Content</li>
+            <li>Swimming</li>
+            <li>Cooking</li>
+          </ul>
+        </section>
+
+        <section class="list-section">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Bugs</li>
+            <li>Slow internet</li>
+            <li>Being broke</li>
+            <li>Fake Friends</li>
+          </ul>
+        </section>
+      </div>
+
+      <ul data-testid="test-user-social-links" class="social-links">
+        <li>
+          <a data-testid="test-user-social-github" href="https://github.com/favourite2024" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/udeh-favour-0ab695270" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a data-testid="test-user-social-twitter" href="https://twitter.com/favourdiva360" target="_blank" rel="noopener noreferrer" title="Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
