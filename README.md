@@ -1,127 +1,111 @@
-Frontend Wizards — Stage 0 Task: Profile Card
+Frontend Wizards - Stage 0: Profile Card
 
-This is a responsive, accessible, and testable Profile Card built using semantic HTML, modern CSS, and vanilla JavaScript.  
-It fulfills all requirements for the **Frontend Wizards Stage 0** task.
+This project is a responsive, accessible, and testable Profile Card built using semantic HTML, modern CSS, and vanilla JavaScript. 
+It fulfills all requirements for the Frontend Wizards Stage 0 challenge.
 
+-------------------------------------------------------------------
 
- Project Overview
+Live Project
+-------------
+Live Site (Netlify): https://favourprofile.netlify.app
+GitHub Repository: https://github.com/Favourite2024/frontend-wizards-profile-card
 
-The Profile Card displays user information such as:
--  Name
--  Short biography
--  Current time ( milliseconds)
--  Avatar image
--  Social links (GitHub, LinkedIn, Twitter/X)
--  Hobbies
--  Dislikes
+-------------------------------------------------------------------
 
-Every visible element is assigned a unique `data-testid` attribute to support automated testing.
+Project Overview
+----------------
+This profile card displays the following:
 
+- Name and biography
+- Avatar image
+- Current time (in milliseconds)
+- Hobbies list
+- Dislikes list
+- Social icons (GitHub, LinkedIn, Twitter/X)
 
- Folder Structure
+All visible elements include data-testid attributes for automated testing.
 
-frontend-wizards-profile-card
+-------------------------------------------------------------------
+
+Folder Structure
+----------------
+frontend-wizards-profile-card/
 │
-├── image.jpg # User avatar image
-├── index.html # Main HTML structure
-├── README.md # Project documentation
-├── script.js # Live time functionality
-└── style.css # Styling and responsiveness
+├── image.jpg       (Profile avatar)
+├── index.html      (Semantic HTML structure)
+├── README.md       (Documentation)
+├── script.js       (Real-time clock functionality)
+└── style.css       (Styling and responsiveness)
 
+-------------------------------------------------------------------
 
+Features
+--------
+- Semantic HTML structure using article, section, ul, li, and headings.
+- Responsive design implemented with CSS Grid and Flexbox.
+- Gradient header with soft card shadows.
+- Animated avatar hover effect.
+- Accessible social icons using Font Awesome.
+- Keyboard-friendly links with visible focus styles.
+- Real-time clock using Date.now() and setInterval().
 
- Live Demo
+-------------------------------------------------------------------
 
-- GitHub Repository: [https://github.com/favourite2024/frontend-wizards-profile-card](https://github.com/favourite2024/frontend-wizards-profile-card)
-- Live Site (GitHub Pages / Netlify): https://YOUR-LIVE-LINK
+Data Test IDs
+-------------
+Profile Card ..................... test-profile-card
+User Name ........................ test-user-name
+Biography ........................ test-user-bio
+Current Time ..................... test-user-time
+Avatar ........................... test-user-avatar
+Social Links Container ........... test-user-social-links
+GitHub Link ...................... test-user-social-github
+LinkedIn Link .................... test-user-social-linkedin
+Twitter Link ..................... test-user-social-twitter
+Hobbies List ..................... test-user-hobbies
+Dislikes List .................... test-user-dislikes
 
+-------------------------------------------------------------------
 
+Run Locally
+-----------
+1. Clone the repository:
+   git clone https://github.com/Favourite2024/frontend-wizards-profile-card.git
 
-   Key Features
+2. Open the project folder:
+   cd frontend-wizards-profile-card
 
- ✅ Semantic & Accessible HTML
-- Uses `<article>`, `<section>`, `<figure>`, `<ul>`, `<li>`, and `<img>` for structure and accessibility.  
-- Each visual element has a corresponding `data-testid` for testing.
+3. Run the project:
+   Open index.html in your web browser.
 
- Modern UI with CSS
-- Gradient background (`#667eea → #764ba2`)  
-- Soft card shadow and hover animation  
-- Circular avatar with white border  
-- Clean layout using **CSS Grid** and Flexbox 
-- Fully responsive on mobile and desktop
+No installation or build tools are required.
 
- Dynamic JavaScript Time
-The current time updates in real-time using:
- javascript
-function updateTime() {
-  const el = document.getElementById("time");
-  el.textContent = Date.now();
-}
-updateTime();
-setInterval(updateTime, 1000);
-Displays accurate milliseconds and refreshes every second.
+-------------------------------------------------------------------
 
- Interactive Social Icons
-Each social media link:
+Technologies Used
+-----------------
+HTML5
+CSS3 (Grid, Flexbox, Gradients, Transitions)
+JavaScript (ES6)
+Font Awesome 6.5.0
 
-Opens in a new tab (target="_blank")
+-------------------------------------------------------------------
 
-Uses rel="noopener noreferrer" for security
+Notes
+-----
+- The current time updates dynamically every second using Date.now().
+- All required data-testid attributes are present as per project guidelines.
+- The layout adapts smoothly to all screen sizes (mobile, tablet, desktop).
 
-Features hover transitions and accessible focus states
+-------------------------------------------------------------------
 
-  Data Test IDs
-All required test IDs are included for automated testing:
-
-Element	Test ID
-Profile Card	test-profile-card
-User Name	test-user-name
-Biography	test-user-bio
-Current Time	test-user-time
-Avatar	test-user-avatar
-Social Links Wrapper	test-user-social-links
-GitHub Link	test-user-social-github
-LinkedIn Link	test-user-social-linkedin
-Twitter/X Link	test-user-social-twitter
-Hobbies List	test-user-hobbies
-Dislikes List	test-user-dislikes
-
-   Responsiveness
-The design adapts across all screen sizes.
-
-On mobile, sections stack vertically.
-
-On wider screens, the layout remains centered and card-like.
-
-The avatar and typography scale proportionally for readability.
-
-  How to Run Locally
-Clone this repository:
-
-bash
-Copy code
-git clone https://github.com/YOUR-USERNAME/frontend-wizards-profile-card.git
-Open the folder:
-
-bash
-Copy code
-cd frontend-wizards-profile-card
-Run the project by opening index.html in your browser.
-
-No additional setup or installation required.
-
-  Technologies Used
-HTML5 — semantic structure
-
-CSS3 — gradient backgrounds, shadows, flexbox, and grid
-
-JavaScript (ES6) — real-time time update
-
-Font Awesome 6.5.0 — icons for GitHub, LinkedIn, and Twitter/X
-
-   Author
+Author
+------
 Favour Onyinyechi Udeh
-Frontend Developer passionate about crafting accessible, responsive, and human-centered digital experiences.
+Frontend Developer focused on building accessible, responsive, and user-friendly web experiences.
 
-  License
-This project is open source and available under the MIT License.
+-------------------------------------------------------------------
+
+License
+-------
+This project is licensed under the MIT License.
